@@ -43,6 +43,7 @@ namespace LoRaWan.NetworkServer
                 return handler;
             });
 
+
         internal static IServiceCollection AddApiClient(this IServiceCollection services, Func<HttpMessageHandler> createHttpMessageHandler)
         {
             // This Http Client retries aggressively first to not miss the receive window if possible.
